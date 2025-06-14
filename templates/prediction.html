@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #333; margin-bottom: 30px; }
+        .result-box { background-color: #f8f9fa; border: 2px solid #007bff; border-radius: 10px; padding: 30px; margin: 30px 0; }
+        .prediction-text { font-size: 24px; font-weight: bold; color: #333; margin-bottom: 20px; }
+        .nav-links { margin-bottom: 20px; }
+        .nav-links a { color: #007bff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .nav-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-box">
+            <div class="prediction-text">{{ prediction_text }}</div>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/details">Details</a>
+        </div>
+    </div>
+</body>
+</html>
